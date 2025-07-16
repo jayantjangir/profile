@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Jayant Jangir</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home icon - only show on other pages -->
+    <div class="home-icon" id="homeIcon">
+        <button class="btn btn-home" onclick="window.location.href='index.html'" title="Back to Resume">
+            <i class="fas fa-home"></i>
+        </button>
+    </div>
+
+    <div class="controls">
+        <button class="btn btn-secondary" onclick="toggleTheme()" id="themeBtn">
+            <i class="fas fa-palette"></i> Dark Mode
+        </button>
+        <button class="btn btn-primary" onclick="downloadPDF()" id="downloadBtn">
+            <i class="fas fa-file-arrow-down"></i> Download PDF
+        </button>
+        <button class="btn btn-accent" onclick="printPage()" id="printBtn">
+            <i class="fas fa-print"></i> Print Page
+        </button>
+    </div>
+
+    <div class="version-info" id="versionInfo">
+        Resume v1.0 | Last Updated: <span id="lastUpdated"></span>
+    </div>
+
+    <div class="main-container">
+        <div class="container" id="resume-content">
+            <header class="header">
+                <div class="profile-section">
+                    <div class="profile-image" id="profileImage" onclick="window.location.href='index.html'" title="Back to Resume">
+                        <img src="JayantJangir.jpg" alt="Jayant Jangir - Software Developer" onerror="this.style.display='none'">
+                        <div class="image-overlay" id="imageOverlay">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-content">
+                    <h1>Jayant Jangir</h1>
+                    <div class="job-designation">Software Developer</div>
+                    <div class="contact-info">
+                        <div class="contact-item" data-hover-text="jayantjangir97@gmail.com">
+                            <i class="fas fa-envelope icon"></i>
+                            <a href="mailto:jayantjangir97@gmail.com" class="contact-link">Email Me</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="+91 8112286926">
+                            <i class="fas fa-phone icon"></i>
+                            <a href="tel:+918112286926" class="contact-link">Call Me</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="linkedin.com/in/jayantjangir">
+                            <i class="fab fa-linkedin icon"></i>
+                            <a href="https://www.linkedin.com/in/jayantjangir/" target="_blank" class="contact-link">Find me on LinkedIn</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="github.com/jayantjangir">
+                            <i class="fab fa-github icon"></i>
+                            <a href="https://github.com/jayantjangir" target="_blank" class="contact-link">Find me on GitHub</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="NIT Hamirpur Graduate">
+                            <i class="fas fa-graduation-cap icon"></i>
+                            <a href="https://nith.ac.in/" target="_blank" class="contact-link">NIT Hamirpur Graduate</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="Amdocs Gurgaon">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <a href="https://www.google.com/maps/search/Amdocs+Gurgaon+India" target="_blank" class="contact-link">Gurgaon, India</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                </div>
+                <div class="section-content">
+                    <div class="education-item detailed-education">
+                        <div class="institution-header">
+                            <a href="https://nith.ac.in/" target="_blank" class="institution-link">National Institute of Technology (NIT) Hamirpur</a>
+                            <a href="https://www.google.com/maps/search/National+Institute+of+Technology+Hamirpur+Himachal+Pradesh" target="_blank" class="location-link">Himachal Pradesh, India</a>
+                        </div>
+                        <div class="degree">Bachelor of Technology - Computer Science and Engineering</div>
+                        <div class="education-details">
+                            <div class="academic-info">
+                                <div class="academic-badge cgpa-badge">
+                                    <i class="fas fa-trophy"></i>
+                                    <span class="label">CGPA:</span>
+                                    <span class="value">8.04 / 10.0</span>
+                                </div>
+                                <div class="academic-badge duration-badge">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span class="label">Duration:</span>
+                                    <span class="value">August 2015 – May 2019 (4 Years)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h4>Academic Highlights</h4>
+                        <ul class="academic-highlights">
+                            <li><strong>Core Subjects:</strong> Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks, Software Engineering</li>
+                            <li><strong>Specialized Courses:</strong> Machine Learning, Artificial Intelligence, Web Technologies, Mobile Application Development</li>
+                            <li><strong>Final Year Project:</strong> "Smart Carpooling Platform" - Android application with intelligent matching algorithms and real-time booking management</li>
+                            <li><strong>Technical Skills Developed:</strong> Java, C++, Python, Android Development, Web Development, Database Design</li>
+                            <li><strong>Extracurricular:</strong> Active member of Computer Science Society, participated in coding competitions and technical workshops</li>
+                        </ul>
+                        
+                        <h4>Key Achievements</h4>
+                        <div class="achievements">
+                            <div class="achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <div>
+                                    <h5>Academic Excellence</h5>
+                                    <p>Maintained consistent academic performance with CGPA of 8.04/10.0</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <h5>Programming Competitions</h5>
+                                    <p>Participated in multiple coding competitions and hackathons</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <div>
+                                    <h5>Project Innovation</h5>
+                                    <p>Developed innovative solutions for real-world problems through academic projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-item detailed-education">
+                        <div class="institution-header">
+                            <a href="https://rajeduboard.rajasthan.gov.in/" target="_blank" class="institution-link">Board of Secondary Education, Rajasthan</a>
+                            <a href="https://www.google.com/maps/search/Board+of+Secondary+Education+Rajasthan+India" target="_blank" class="location-link">Rajasthan, India</a>
+                        </div>
+                        <div class="school-name">S.B.S. Memo. S. S. Sr. Sec. School Sabalpura, Sikar</div>
+                        <div class="education-details">
+                            <div class="academic-info">
+                                <div class="academic-badge marks-badge">
+                                    <i class="fas fa-medal"></i>
+                                    <span class="label">Senior Secondary (XII):</span>
+                                    <span class="value">86.80% (2014)</span>
+                                </div>
+                                <div class="academic-badge marks-badge">
+                                    <i class="fas fa-award"></i>
+                                    <span class="label">Secondary (X):</span>
+                                    <span class="value">74.33% (2012)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h4>Academic Foundation</h4>
+                        <ul class="academic-highlights">
+                            <li><strong>Science Stream:</strong> Physics, Chemistry, Mathematics with strong foundation in analytical thinking</li>
+                            <li><strong>Mathematics Excellence:</strong> Developed strong problem-solving skills and logical reasoning abilities</li>
+                            <li><strong>Academic Consistency:</strong> Maintained excellent academic performance throughout school years</li>
+                            <li><strong>Competitive Preparation:</strong> Successfully cleared JEE Main and JEE Advanced for NIT admission</li>
+                            <li><strong>Leadership:</strong> Served as class representative and participated in various academic competitions</li>
+                        </ul>
+                        
+                        <h4>Key Achievements</h4>
+                        <div class="achievements">
+                            <div class="achievement-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h5>Academic Excellence</h5>
+                                    <p>Secured 86.80% in Senior Secondary with distinction in Mathematics and Physics</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <div>
+                                    <h5>Competitive Success</h5>
+                                    <p>Successfully qualified JEE Main and Advanced for admission to NIT Hamirpur</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h5>Leadership & Participation</h5>
+                                    <p>Active participation in school activities and academic competitions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="education-summary">
+                        <h3>Educational Journey Summary</h3>
+                        <p>My educational journey from secondary school to NIT Hamirpur has been marked by consistent academic excellence and a strong foundation in mathematics and sciences. The rigorous curriculum at NIT Hamirpur, combined with practical exposure to cutting-edge technologies, has equipped me with both theoretical knowledge and practical skills essential for a successful career in software development.</p>
+                        
+                        <div class="education-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">4</div>
+                                <div class="stat-label">Years at NIT</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">8.04</div>
+                                <div class="stat-label">CGPA</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">86.80%</div>
+                                <div class="stat-label">XII Marks</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2019</div>
+                                <div class="stat-label">Graduation Year</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

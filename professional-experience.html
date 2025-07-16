@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Experience - Jayant Jangir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home icon -->
+    <div class="home-icon" id="homeIcon">
+        <button class="btn btn-home" onclick="window.location.href='index.html'" title="Back to Resume">
+            <i class="fas fa-home"></i>
+        </button>
+    </div>
+
+    <div class="controls">
+        <button class="btn btn-secondary" onclick="toggleTheme()" id="themeBtn">
+            <i class="fas fa-moon"></i> Dark Mode
+        </button>
+        <button class="btn btn-primary" onclick="downloadPDF()" id="downloadBtn">
+            <i class="fas fa-file-arrow-down"></i> Download PDF
+        </button>
+        <button class="btn btn-accent" onclick="printPage()" id="printBtn">
+            <i class="fas fa-print"></i> Print Page
+        </button>
+    </div>
+
+    <div class="version-info" id="versionInfo">
+        Professional Experience | Last Updated: <span id="lastUpdated"></span>
+    </div>
+
+    <div class="main-container">
+        <div class="container" id="resume-content">
+            <header class="header">
+                <div class="profile-section">
+                    <div class="profile-image clickable" onclick="window.location.href='index.html'" title="Back to Resume">
+                        <img src="JayantJangir.jpg" alt="Jayant Jangir - Software Developer" onerror="this.style.display='none'">
+                        <div class="image-overlay">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-content">
+                    <h1>Professional Experience</h1>
+                    <div class="job-designation">Detailed Work History & Achievements</div>
+                </div>
+            </header>
+
+            <section class="subsection">
+                <h2 class="subsection-title">Current Position</h2>
+                
+                <div class="detailed-job">
+                    <div class="job-title">Software Developer</div>
+                    <div class="company">
+                        <a href="https://www.amdocs.com/" target="_blank">Amdocs Development Centre India LLP, Gurgaon SEZ Unit</a>
+                    </div>
+                    <div class="duration">April 11, 2022 – Present (2.5+ Years) | Gurgaon, India</div>
+                    
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-briefcase"></i> Role & Project Details</h4>
+                        <ul>
+                            <li><strong>Role:</strong> Software Development and Production Support in Billing</li>
+                            <li><strong>Project:</strong> Charter Mobile (Charter Invoicing)</li>
+                            <li><strong>Domain:</strong> Telecommunications BSS (Business Support Systems)</li>
+                            <li><strong>Team Structure:</strong> Scrum Team of Invoicing with cross-functional collaboration</li>
+                        </ul>
+                    </div>
+
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-code"></i> Core Responsibilities & Achievements</h4>
+                        <ul>
+                            <li><strong>Custom Development:</strong> Being a part of Scrum Team of Invoicing, developed customized source code according to business requirement for various billing activities</li>
+                            <li><strong>System Enhancement:</strong> Helped in building simplified, scalable and secure functionality for Charter Account to enhance and upgrade the billing system as per requirement</li>
+                            <li><strong>BSS Product Development:</strong> Developed various functionality related to telecom BSS product (Ordering, ESB, EOC) across various BSS products</li>
+                            <li><strong>Production Support:</strong> Provided critical production support for billing systems ensuring 99.9% uptime</li>
+                            <li><strong>Agile Development:</strong> Active participation in sprint planning, daily standups, and retrospectives</li>
+                        </ul>
+                    </div>
+
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-tools"></i> Technical Skills Applied</h4>
+                        <ul>
+                            <li><strong>Programming Languages:</strong> Java (Spring Boot, Spring MVC), C#, Python</li>
+                            <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript, ASP.NET</li>
+                            <li><strong>Frameworks & Libraries:</strong> Spring, Spring Boot, Maven, REST APIs</li>
+                            <li><strong>Database Technologies:</strong> MySQL, Oracle, SQL Server</li>
+                            <li><strong>Cloud & Tools:</strong> Cloud platforms, Network management, IT Service Management, MS Office 365, Automation tools</li>
+                            <li><strong>Version Control & DevOps:</strong> Git, Perforce, Nexus, Unix</li>
+                            <li><strong>Development Methodologies:</strong> Scrum Methodologies, Agile</li>
+                        </ul>
+                    </div>
+
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-chart-line"></i> Impact & Results</h4>
+                        <ul>
+                            <li>Successfully delivered multiple billing system enhancements improving customer experience</li>
+                            <li>Reduced billing processing time by 30% through optimized code implementation</li>
+                            <li>Maintained zero critical production incidents during tenure</li>
+                            <li>Contributed to Charter Mobile's billing system scalability supporting millions of customers</li>
+                            <li>Implemented secure coding practices ensuring compliance with telecom industry standards</li>
+                        </ul>
+                    </div>
+
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-users"></i> Collaboration & Leadership</h4>
+                        <ul>
+                            <li><strong>Scrum Team Participation:</strong> Active member of Invoicing Scrum team with cross-functional collaboration</li>
+                            <li><strong>Business Requirement Analysis:</strong> Direct interaction with business analysts for requirement understanding</li>
+                            <li><strong>Code Reviews:</strong> Participated in peer code reviews ensuring quality and best practices</li>
+                            <li><strong>Knowledge Sharing:</strong> Conducted technical sessions on billing system architecture</li>
+                            <li><strong>Mentoring:</strong> Guided junior developers on BSS product development</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subsection">
+                <h2 class="subsection-title">Previous Experience</h2>
+                
+                <div class="detailed-job">
+                    <div class="job-title">Systems Engineer</div>
+                    <div class="company">
+                        <a href="https://www.tcs.com/" target="_blank">TATA Consultancy Services (TCS), Mumbai</a>
+                    </div>
+                    <div class="duration">September 9, 2019 – April 8, 2022 (2.5+ Years) | Mumbai, India</div>
+                    
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-briefcase"></i> Role & Project Details</h4>
+                        <ul>
+                            <li><strong>Role:</strong> System Administrator (Infra Managed Services)</li>
+                            <li><strong>Project:</strong> GE Current & Lightning (Migrated from GE and later Acquisition of Hubbell)</li>
+                            <li><strong>Domain:</strong> Infrastructure Management and IT Operations</li>
+                            <li><strong>Client:</strong> GE Current (later acquired by Hubbell)</li>
+                        </ul>
+                    </div>
+
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-network-wired"></i> Core Responsibilities & Achievements</h4>
+                        <ul>
+                            <li><strong>Network Device Management:</strong> Manage migration, enrollment and upgrade of Network Devices (Cisco Switches, Routers, Palo Alto Firewall, Access Points, Printers, Verizon and Spectrum Voice), Servers and Security via iBoss, Zscaler, AppGate VPN, PRTG Monitoring tool</li>
+                            <li><strong>Device Enrollment & Migration:</strong> Manage PC Migration and Mobile Device Enrollment in Intune Company portal, IAM, ITSM</li>
+                            <li><strong>Infrastructure Monitoring:</strong> Implemented comprehensive monitoring solutions using PRTG for network and server infrastructure</li>
+                            <li><strong>Security Management:</strong> Managed security infrastructure including firewalls, VPN solutions, and endpoint protection</li>
+                            <li><strong>ITSM Operations:</strong> Handled incident, problem, and change management processes</li>
+                        </ul>
+                    </div>
+
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-project-diagram"></i> Key Projects & Contributions</h4>
+                        <ul>
+                            <li><strong>PRTG Auto Ticket Generation in Symphony Summit:</strong>
+                                <ul>
+                                    <li>Developed automated incident management system integrating PRTG Monitoring tool with Symphony Summit ITSM</li>
+                                    <li>Reduced manual ticket creation time from 15 minutes to 30 seconds</li>
+                                    <li>Implemented real-time monitoring for 500+ network devices</li>
+                                    <li>Achieved 99.5% accuracy in automated ticket generation</li>
+                                </ul>
+                            </li>
+                            <li><strong>AI Assistant for GE Current (Intelligent Chat Bot):</strong>
+                                <ul>
+                                    <li>Designed and developed intelligent chatbot using RASA Core and RASA NLU frameworks</li>
+                                    <li>Trained NLU model with 95% intent classification accuracy</li>
+                                    <li>Implemented context-aware conversation flows</li>
+                                    <li>Reduced customer support workload by 40%</li>
+                                </ul>
+                            </li>
+                            <li><strong>Infrastructure Migration Projects:</strong>
+                                <ul>
+                                    <li>Successfully managed large-scale infrastructure migration during GE Current acquisition</li>
+                                    <li>Coordinated migration of 1000+ devices with zero downtime</li>
+                                    <li>Implemented new security protocols and compliance measures</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-tools"></i> Technical Skills Developed</h4>
+                        <ul>
+                            <li><strong>Network Technologies:</strong> Cisco Switches, Routers, Palo Alto Firewall, Access Points</li>
+                            <li><strong>Security Tools:</strong> iBoss, Zscaler, AppGate VPN, Endpoint Protection</li>
+                            <li><strong>Monitoring Tools:</strong> PRTG Network Monitor, Symphony Summit ITSM</li>
+                            <li><strong>Cloud Platforms:</strong> Microsoft Intune, Azure AD, IAM solutions</li>
+                            <li><strong>Programming & Automation:</strong> PowerShell, Python, REST APIs</li>
+                            <li><strong>AI/ML Technologies:</strong> RASA Framework, Natural Language Processing, Machine Learning</li>
+                            <li><strong>Database Technologies:</strong> SQL Server, MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-chart-line"></i> Achievements & Learning</h4>
+                        <ul>
+                            <li>Successfully completed TCS comprehensive training program with distinction</li>
+                            <li>Managed critical infrastructure with 99.8% uptime achievement</li>
+                            <li>Received client appreciation for innovative automation solutions</li>
+                            <li>Led multiple infrastructure migration projects with zero business impact</li>
+                            <li>Developed expertise in enterprise-level infrastructure management</li>
+                            <li>Gained valuable experience in AI/ML implementation for enterprise solutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="detailed-responsibilities">
+                        <h4><i class="fas fa-users"></i> Professional Development</h4>
+                        <ul>
+                            <li><strong>Training & Certification:</strong> Completed CBO AI Zumba – Advanced AI Training Program at TCS Wellspring, Mumbai</li>
+                            <li><strong>Team Collaboration:</strong> Worked in distributed teams across multiple time zones</li>
+                            <li><strong>Client Interaction:</strong> Direct communication with GE Current stakeholders for project requirements</li>
+                            <li><strong>Knowledge Sharing:</strong> Conducted training sessions on PRTG monitoring and automation</li>
+                            <li><strong>Process Improvement:</strong> Implemented automation solutions reducing manual effort by 60%</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subsection">
+                <h2 class="subsection-title">Career Progression Summary</h2>
+                
+                <div class="detailed-responsibilities">
+                    <h4><i class="fas fa-rocket"></i> Professional Journey</h4>
+                    <ul>
+                        <li><strong>Total Experience:</strong> 5+ years in software development and infrastructure management</li>
+                        <li><strong>Career Growth:</strong> Progressed from Systems Engineer to Software Developer with expanded responsibilities</li>
+                        <li><strong>Technology Evolution:</strong> Evolved from infrastructure management to software development and billing systems</li>
+                        <li><strong>Domain Expertise:</strong> Gained expertise in telecommunications BSS, infrastructure management, and AI/ML solutions</li>
+                        <li><strong>Leadership Development:</strong> Transitioned from individual contributor to team collaborator and mentor</li>
+                    </ul>
+                </div>
+
+                <div class="detailed-responsibilities">
+                    <h4><i class="fas fa-trophy"></i> Overall Impact</h4>
+                    <ul>
+                        <li>Contributed to 10+ successful project deliveries across two major organizations</li>
+                        <li>Maintained 100% client satisfaction rate throughout career</li>
+                        <li>Consistently exceeded performance expectations and delivery timelines</li>
+                        <li>Built strong reputation for technical excellence and innovative problem-solving</li>
+                        <li>Established expertise in both infrastructure management and software development</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="subsection">
+                <h2 class="subsection-title">Professional Growth & Learning</h2>
+                
+                <div class="detailed-responsibilities">
+                    <h4><i class="fas fa-graduation-cap"></i> Continuous Learning & Development</h4>
+                    <ul>
+                        <li><strong>Certifications:</strong> Microsoft Azure Fundamentals (AZ-900), TCS AI Training Certification</li>
+                        <li><strong>Training Programs:</strong> CBO AI Zumba – Advanced AI Training Program, Enterprise Infrastructure Management</li>
+                        <li><strong>Technology Adoption:</strong> Early adopter of AI/ML frameworks and automation tools</li>
+                        <li><strong>Industry Engagement:</strong> Active participation in tech conferences and developer communities</li>
+                    </ul>
+                </div>
+
+                <div class="detailed-responsibilities">
+                    <h4><i class="fas fa-lightbulb"></i> Innovation & Problem Solving</h4>
+                    <ul>
+                        <li>Developed automated ITSM integration reducing manual effort by 60%</li>
+                        <li>Created AI-powered chatbot improving customer support efficiency by 40%</li>
+                        <li>Implemented intelligent monitoring solutions with 99.5% accuracy</li>
+                        <li>Designed scalable billing system enhancements supporting millions of customers</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects, Trainings & Certifications - Jayant Jangir</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home icon - only show on other pages -->
+    <div class="home-icon" id="homeIcon">
+        <button class="btn btn-home" onclick="window.location.href='index.html'" title="Back to Resume">
+            <i class="fas fa-home"></i>
+        </button>
+    </div>
+
+    <div class="controls">
+        <button class="btn btn-secondary" onclick="toggleTheme()" id="themeBtn">
+            <i class="fas fa-palette"></i> Dark Mode
+        </button>
+        <button class="btn btn-primary" onclick="downloadPDF()" id="downloadBtn">
+            <i class="fas fa-file-arrow-down"></i> Download PDF
+        </button>
+        <button class="btn btn-accent" onclick="printPage()" id="printBtn">
+            <i class="fas fa-print"></i> Print Page
+        </button>
+    </div>
+
+    <div class="version-info" id="versionInfo">
+        Resume v1.0 | Last Updated: <span id="lastUpdated"></span>
+    </div>
+
+    <div class="main-container">
+        <div class="container" id="resume-content">
+            <header class="header">
+                <div class="profile-section">
+                    <div class="profile-image" id="profileImage" onclick="window.location.href='index.html'" title="Back to Resume">
+                        <img src="JayantJangir.jpg" alt="Jayant Jangir - Software Developer" onerror="this.style.display='none'">
+                        <div class="image-overlay" id="imageOverlay">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-content">
+                    <h1>Jayant Jangir</h1>
+                    <div class="job-designation">Software Developer</div>
+                    <div class="contact-info">
+                        <div class="contact-item" data-hover-text="jayantjangir97@gmail.com">
+                            <i class="fas fa-envelope icon"></i>
+                            <a href="mailto:jayantjangir97@gmail.com" class="contact-link">Email Me</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="+91 8112286926">
+                            <i class="fas fa-phone icon"></i>
+                            <a href="tel:+918112286926" class="contact-link">Call Me</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="linkedin.com/in/jayantjangir">
+                            <i class="fab fa-linkedin icon"></i>
+                            <a href="https://www.linkedin.com/in/jayantjangir/" target="_blank" class="contact-link">Find me on LinkedIn</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="github.com/jayantjangir">
+                            <i class="fab fa-github icon"></i>
+                            <a href="https://github.com/jayantjangir" target="_blank" class="contact-link">Find me on GitHub</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="NIT Hamirpur Graduate">
+                            <i class="fas fa-graduation-cap icon"></i>
+                            <a href="https://nith.ac.in/" target="_blank" class="contact-link">NIT Hamirpur Graduate</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="Amdocs Gurgaon">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <a href="https://www.google.com/maps/search/Amdocs+Gurgaon+India" target="_blank" class="contact-link">Gurgaon, India</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Projects, Trainings & Certifications</h2>
+                </div>
+                <div class="section-content">
+                    <div class="projects-container">
+                        <h3>Professional Projects</h3>
+                        
+                        <div class="project-item detailed-project">
+                            <div class="project-title">PRTG Auto Ticket Generation in Symphony Summit</div>
+                            <div class="project-subtitle">Enterprise ITSM Integration & Automation</div>
+                            <div class="project-meta">
+                                <span class="project-type"><i class="fas fa-briefcase"></i> Enterprise Project</span>
+                                <span class="project-duration"><i class="fas fa-clock"></i> 6 Months</span>
+                                <span class="project-team"><i class="fas fa-users"></i> 4 Members</span>
+                            </div>
+                            <p><strong>Technical Implementation:</strong> Developed automated incident management system integrating PRTG Monitoring tool with Symphony Summit ITSM. The solution automatically generates tickets for Network and Compute device failures based on PING sensor alerts, streamlining IT operations and reducing response time by 60%.</p>
+                            <div class="technologies">
+                                <strong>Technologies:</strong> PRTG Network Monitor, Symphony Summit ITSM, REST APIs, PowerShell, SQL Server
+                            </div>
+                            <div class="project-achievements">
+                                <h5>Key Achievements:</h5>
+                                <ul>
+                                    <li>Reduced manual ticket creation time from 15 minutes to 30 seconds</li>
+                                    <li>Implemented real-time monitoring for 500+ network devices</li>
+                                    <li>Achieved 99.5% accuracy in automated ticket generation</li>
+                                    <li>Integrated with existing ITSM workflows seamlessly</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="project-item detailed-project">
+                            <div class="project-title">AI Assistant for GE Current (Intelligent Chat Bot)</div>
+                            <div class="project-subtitle">RASA-based Contextual AI Assistant</div>
+                            <div class="project-meta">
+                                <span class="project-type"><i class="fas fa-robot"></i> AI/ML Project</span>
+                                <span class="project-duration"><i class="fas fa-clock"></i> 8 Months</span>
+                                <span class="project-team"><i class="fas fa-users"></i> 6 Members</span>
+                            </div>
+                            <p><strong>AI/ML Implementation:</strong> Designed and developed an intelligent chatbot using RASA Core and RASA NLU frameworks. The assistant provides contextual troubleshooting guidance to GE Current customers, enabling first-level issue resolution and reducing support ticket volume by 40%.</p>
+                            <div class="technologies">
+                                <strong>Technologies:</strong> RASA Framework, Python, Natural Language Processing, Machine Learning, Docker
+                            </div>
+                            <div class="project-achievements">
+                                <h5>Key Achievements:</h5>
+                                <ul>
+                                    <li>Trained NLU model with 95% intent classification accuracy</li>
+                                    <li>Implemented context-aware conversation flows</li>
+                                    <li>Reduced customer support workload by 40%</li>
+                                    <li>Deployed using Docker containers for scalability</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>Personal Projects</h3>
+                        
+                        <div class="project-item detailed-project">
+                            <div class="project-title">
+                                <a href="https://github.com/jayantjangir/RiderApp" target="_blank" class="project-link">
+                                    HillShare (Smart Carpooling Platform) <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="project-subtitle">Android Application Development</div>
+                            <div class="project-meta">
+                                <span class="project-type"><i class="fas fa-mobile-alt"></i> Mobile App</span>
+                                <span class="project-duration"><i class="fas fa-clock"></i> 4 Months</span>
+                                <span class="project-team"><i class="fas fa-user"></i> Solo Project</span>
+                            </div>
+                            <p><strong>Mobile Development:</strong> Built comprehensive carpooling Android application with features including ride creation, intelligent matching algorithms, real-time booking management, and integrated payment systems.</p>
+                            <div class="technologies">
+                                <strong>Technologies:</strong> Android Studio, Java, Firebase, Google Maps API, Payment Gateway Integration
+                            </div>
+                            <div class="project-achievements">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Real-time GPS tracking and route optimization</li>
+                                    <li>Intelligent rider-driver matching algorithm</li>
+                                    <li>Secure payment gateway integration</li>
+                                    <li>Rating and review system for users</li>
+                                    <li>Push notifications for ride updates</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="project-item detailed-project">
+                            <div class="project-title">
+                                <a href="https://github.com/jayantjangir/Profo" target="_blank" class="project-link">
+                                    Profo Platform <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="project-subtitle">Online Assessment Portal - Python & Django</div>
+                            <div class="project-meta">
+                                <span class="project-type"><i class="fas fa-globe"></i> Web Application</span>
+                                <span class="project-duration"><i class="fas fa-clock"></i> 5 Months</span>
+                                <span class="project-team"><i class="fas fa-user"></i> Solo Project</span>
+                            </div>
+                            <p><strong>Web Development:</strong> Developed scalable online testing platform using Python Django framework with advanced features for test creation, automated evaluation, and comprehensive analytics.</p>
+                            <div class="technologies">
+                                <strong>Technologies:</strong> Python, Django, PostgreSQL, HTML5, CSS3, JavaScript, Bootstrap
+                            </div>
+                            <div class="project-achievements">
+                                <h5>Key Features:</h5>
+                                <ul>
+                                    <li>Dynamic test creation with multiple question types</li>
+                                    <li>Automated evaluation and instant results</li>
+                                    <li>Comprehensive analytics and reporting</li>
+                                    <li>User role management (Admin, Instructor, Student)</li>
+                                    <li>Responsive design for all devices</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>Professional Training & Certifications</h3>
+                        
+                        <div class="project-item detailed-project certification">
+                            <div class="project-title">CBO AI Zumba – Advanced AI Training Program</div>
+                            <div class="project-subtitle">TCS Wellspring, Mumbai - Instructor-Led Training</div>
+                            <div class="project-meta">
+                                <span class="project-type"><i class="fas fa-certificate"></i> Professional Training</span>
+                                <span class="project-duration"><i class="fas fa-clock"></i> 3 Months</span>
+                                <span class="project-team"><i class="fas fa-building"></i> TCS</span>
+                            </div>
+                            <p><strong>Professional Development:</strong> Completed intensive training program focused on adopting AI and emerging technologies in enterprise projects, gaining expertise in machine learning implementation strategies.</p>
+                            <div class="technologies">
+                                <strong>Skills Acquired:</strong> Machine Learning, Deep Learning, AI Strategy, Enterprise AI Implementation
+                            </div>
+                            <div class="project-achievements">
+                                <h5>Training Highlights:</h5>
+                                <ul>
+                                    <li>Hands-on experience with TensorFlow and PyTorch</li>
+                                    <li>Enterprise AI implementation strategies</li>
+                                    <li>Machine Learning model deployment techniques</li>
+                                    <li>AI ethics and responsible AI development</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="project-item detailed-project certification">
+                            <div class="project-title">Microsoft Azure Fundamentals (AZ-900) Certification</div>
+                            <div class="project-subtitle">Cloud Computing Expertise</div>
+                            <div class="project-meta">
+                                <span class="project-type"><i class="fas fa-cloud"></i> Cloud Certification</span>
+                                <span class="project-duration"><i class="fas fa-calendar"></i> 2023</span>
+                                <span class="project-team"><i class="fab fa-microsoft"></i> Microsoft</span>
+                            </div>
+                            <p><strong>Cloud Certification:</strong> Achieved Microsoft Azure Fundamentals certification, demonstrating proficiency in cloud concepts, Azure services, security, privacy, compliance, and Azure pricing and support.</p>
+                            <div class="technologies">
+                                <strong>Certification Areas:</strong> Azure Services, Cloud Computing, Security & Compliance, Azure Pricing & Support
+                            </div>
+                            <div class="project-achievements">
+                                <h5>Certification Coverage:</h5>
+                                <ul>
+                                    <li>Core Azure services and solutions</li>
+                                    <li>Azure security, privacy, and compliance</li>
+                                    <li>Azure pricing and support models</li>
+                                    <li>Cloud concepts and deployment models</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

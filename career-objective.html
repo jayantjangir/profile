@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Objective - Jayant Jangir</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home icon - only show on other pages -->
+    <div class="home-icon" id="homeIcon">
+        <button class="btn btn-home" onclick="window.location.href='index.html'" title="Back to Resume">
+            <i class="fas fa-home"></i>
+        </button>
+    </div>
+
+    <div class="controls">
+        <button class="btn btn-secondary" onclick="toggleTheme()" id="themeBtn">
+            <i class="fas fa-moon"></i> Dark Mode
+        </button>
+        <button class="btn btn-primary" onclick="downloadPDF()" id="downloadBtn">
+            <i class="fas fa-file-arrow-down"></i> Download PDF
+        </button>
+        <button class="btn btn-accent" onclick="printPage()" id="printBtn">
+            <i class="fas fa-print"></i> Print Page
+        </button>
+    </div>
+
+    <div class="version-info" id="versionInfo">
+        Resume v1.0 | Last Updated: <span id="lastUpdated"></span>
+    </div>
+
+    <div class="main-container">
+        <div class="container" id="resume-content">
+            <header class="header">
+                <div class="profile-section">
+                    <div class="profile-image clickable" id="profileImage" onclick="window.location.href='index.html'" title="Back to Resume">
+                        <img src="JayantJangir.jpg" alt="Jayant Jangir - Software Developer" onerror="this.style.display='none'">
+                        <div class="image-overlay" id="imageOverlay">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-content">
+                    <h1>Jayant Jangir</h1>
+                    <div class="job-designation">Software Developer</div>
+                    <div class="contact-info">
+                        <div class="contact-item" data-hover-text="jayantjangir97@gmail.com">
+                            <i class="fas fa-envelope icon"></i>
+                            <a href="mailto:jayantjangir97@gmail.com" class="contact-link">Email Me</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="+91 8112286926">
+                            <i class="fas fa-phone icon"></i>
+                            <a href="tel:+918112286926" class="contact-link">Call Me</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="linkedin.com/in/jayantjangir">
+                            <i class="fab fa-linkedin icon"></i>
+                            <a href="https://www.linkedin.com/in/jayantjangir/" target="_blank" class="contact-link">LinkedIn</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="github.com/jayantjangir">
+                            <i class="fab fa-github icon"></i>
+                            <a href="https://github.com/jayantjangir" target="_blank" class="contact-link">GitHub</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="nith.ac.in">
+                            <i class="fas fa-graduation-cap icon"></i>
+                            <a href="https://nith.ac.in/" target="_blank" class="contact-link">NIT Hamirpur</a>
+                        </div>
+                        <div class="contact-item" data-hover-text="Amdocs">
+                            <i class="fas fa-map-marker-alt icon"></i>
+                            <a href="https://www.google.com/maps/search/Amdocs+Gurgaon+India" target="_blank" class="contact-link">Gurgaon, India</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Career Objective</h2>
+                </div>
+                <div class="section-content">
+                    <div class="detailed-objective">
+                        <p class="primary-objective">To leverage my expertise and skills in a challenging career role within a progressive organization, driving measurable growth and innovation by embracing new business requirements and pioneering robust technological solutions. I am committed to continuous learning and professional development to ensure the delivery of impactful results.</p>
+                        
+                        <h3>Professional Goals</h3>
+                        <ul class="career-goals">
+                            <li>Drive measurable growth and innovation in enterprise software development within progressive organizations</li>
+                            <li>Pioneer robust technological solutions that address complex business requirements and challenges</li>
+                            <li>Lead development of scalable billing and telecom BSS solutions serving millions of customers</li>
+                            <li>Implement automation and AI-driven solutions to optimize business processes and reduce manual intervention</li>
+                            <li>Contribute to digital transformation initiatives through modern development practices and emerging technologies</li>
+                            <li>Mentor development teams and establish best practices for Scrum methodologies and agile development</li>
+                        </ul>
+
+                        <h3>Core Strengths</h3>
+                        <div class="strengths-grid">
+                            <div class="strength-item">
+                                <i class="fas fa-code"></i>
+                                <h4>Enterprise Development</h4>
+                                <p>Expertise in developing customized source code for billing systems and telecom BSS products (Ordering, ESB, EOC)</p>
+                            </div>
+                            <div class="strength-item">
+                                <i class="fas fa-cogs"></i>
+                                <h4>System Integration & Automation</h4>
+                                <p>Experience in building simplified, scalable and secure functionality with PRTG monitoring and ITSM integration</p>
+                            </div>
+                            <div class="strength-item">
+                                <i class="fas fa-network-wired"></i>
+                                <h4>Infrastructure Management</h4>
+                                <p>Proficient in managing network devices, cloud migration, and IT service management across enterprise environments</p>
+                            </div>
+                            <div class="strength-item">
+                                <i class="fas fa-users-cog"></i>
+                                <h4>Scrum Team Leadership</h4>
+                                <p>Strong collaboration skills with experience in Scrum methodologies and cross-functional team coordination</p>
+                            </div>
+                        </div>
+
+                        <h3>Technology Focus Areas</h3>
+                        <div class="focus-areas">
+                            <div class="focus-category">
+                                <h4><i class="fas fa-laptop-code"></i> Software Development</h4>
+                                <ul>
+                                    <li>Enterprise billing systems and Charter invoicing solutions</li>
+                                    <li>REST APIs and microservices architecture</li>
+                                    <li>Spring Boot and Maven-based application development</li>
+                                    <li>Database optimization and MySQL performance tuning</li>
+                                </ul>
+                            </div>
+                            <div class="focus-category">
+                                <h4><i class="fas fa-robot"></i> Automation & AI</h4>
+                                <ul>
+                                    <li>PRTG monitoring tool integration with Symphony Summit</li>
+                                    <li>AI chatbot development using RASA Core and NLU</li>
+                                    <li>Automated incident management and ticketing systems</li>
+                                    <li>Process automation for network and compute devices</li>
+                                </ul>
+                            </div>
+                            <div class="focus-category">
+                                <h4><i class="fas fa-cloud"></i> Infrastructure & DevOps</h4>
+                                <ul>
+                                    <li>Cloud migration and device enrollment strategies</li>
+                                    <li>Network device management (Cisco, Palo Alto, Verizon)</li>
+                                    <li>Version control with Git and Perforce</li>
+                                    <li>Unix system administration and deployment</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>Commitment to Excellence</h3>
+                        <div class="excellence-commitment">
+                            <div class="commitment-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>Continuous Learning</h4>
+                                <p>Dedicated to professional development through certifications like Microsoft Azure Fundamentals (AZ-900) and staying updated with emerging technologies</p>
+                            </div>
+                            <div class="commitment-item">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Measurable Impact</h4>
+                                <p>Focus on delivering solutions that drive quantifiable business growth and operational efficiency improvements</p>
+                            </div>
+                            <div class="commitment-item">
+                                <i class="fas fa-handshake"></i>
+                                <h4>Business Alignment</h4>
+                                <p>Expertise in translating business requirements into technical solutions that enhance and upgrade existing systems</p>
+                            </div>
+                        </div>
+
+                        <h3>Vision</h3>
+                        <p class="vision-statement">To become a technology leader who bridges the gap between innovative solutions and practical business needs, specializing in enterprise software development, automation, and system integration. I envision contributing to organizations where I can apply my experience in billing systems, infrastructure management, and emerging technologies to drive digital transformation and deliver impactful results that benefit both the organization and its customers.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
